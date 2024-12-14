@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart WiFi Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="nav-content">
+      <div class="logo">
+        <i class="fas fa-wifi"></i>
+        <span>SmartWiFi</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features" class="nav-link"><i class="fas fa-star"></i> Features</a>
+        <a href="#packages" class="nav-link"><i class="fas fa-box"></i> Packages</a>
+        <a href="#support" class="nav-link"><i class="fas fa-headset"></i> Support</a>
+        <div class="theme-toggle">
+          <button id="themeToggle" class="theme-toggle-btn">
+            <i class="fas fa-sun light-icon"></i>
+            <i class="fas fa-moon dark-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header">
+    <div class="header-content">
+      <div class="connection-status">
+        <div class="signal-strength">
+          <i class="fas fa-signal"></i>
+          <div class="signal-bars">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <span class="status-text">Strong Signal Available</span>
+        <div class="speed-indicator">
+          <i class="fas fa-tachometer-alt"></i>
+          <span>Up to 100 Mbps</span>
+        </div>
+      </div>
+      <h1>Experience Lightning-Fast Internet</h1>
+      <p class="subtitle">Connect to our premium WiFi network and enjoy seamless browsing</p>
+      <div class="current-stats">
+        <div class="stat">
+          <i class="fas fa-users"></i>
+          <span>50+ Active Users</span>
+        </div>
+        <div class="stat">
+          <i class="fas fa-bolt"></i>
+          <span>99.9% Uptime</span>
+        </div>
+        <div class="stat">
+          <i class="fas fa-shield-alt"></i>
+          <span>Secure Network</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="features" class="features-section">
+    <h2>Why Choose Our Network?</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <i class="fas fa-rocket"></i>
+        <h3>High Speed</h3>
+        <p>Lightning-fast connection speeds up to 100 Mbps</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Secure</h3>
+        <p>Enterprise-grade security with WPA3 encryption</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-clock"></i>
+        <h3>24/7 Access</h3>
+        <p>Round-the-clock availability with instant connection</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-globe"></i>
+        <h3>Wide Coverage</h3>
+        <p>Strong signal throughout the premises</p>
+      </div>
+    </div>
+  </section>
+
+  <main id="packages" class="packages-container">
+    <h2>Choose Your Plan</h2>
+    <div class="packages">
+      <!-- Demo Plan -->
+      <div class="package quick">
+        <div class="package-content">
+          <div class="package-badge">QUICK TRIAL</div>
+          <div class="package-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h2>Demo</h2>
+          <div class="package-details">
+            <p class="price">2 KSH</p>
+            <p class="duration"><i class="fas fa-clock"></i> 5 Minutes</p>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> Quick trial period</li>
+              <li><i class="fas fa-check"></i> Test the service</li>
+            </ul>
+          </div>
+          <button class="package-button" data-price="2">
+            <i class="fas fa-bolt"></i> Try Now
+          </button>
+        </div>
+      </div>
+
+      <!-- 30 Minutes Plan -->
+      <div class="package">
+        <div class="package-content">
+          <div class="package-icon">
+            <i class="fas fa-hourglass-start"></i>
+          </div>
+          <h2>30 Minutes</h2>
+          <div class="package-details">
+            <p class="price">5 KSH</p>
+            <p class="duration"><i class="fas fa-clock"></i> 30 Minutes</p>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> Short browsing session</li>
+              <li><i class="fas fa-check"></i> Basic access</li>
+            </ul>
+          </div>
+          <button class="package-button" data-price="5">
+            <i class="fas fa-plug"></i> Connect
+          </button>
+        </div>
+      </div>
+
+      <!-- 1 Hour Plan -->
+      <div class="package">
+        <div class="package-content">
+          <div class="package-icon">
+            <i class="fas fa-hourglass-half"></i>
+          </div>
+          <h2>1 Hour</h2>
+          <div class="package-details">
+            <p class="price">10 KSH</p>
+            <p class="duration"><i class="fas fa-clock"></i> 1 Hour</p>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> Perfect for light usage</li>
+              <li><i class="fas fa-check"></i> Social media & browsing</li>
+            </ul>
+          </div>
+          <button class="package-button" data-price="10">
+            <i class="fas fa-plug"></i> Connect
+          </button>
+        </div>
+      </div>
+
+      <!-- 3 Hours Plan -->
+      <div class="package">
+        <div class="package-content">
+          <div class="package-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h2>3 Hours</h2>
+          <div class="package-details">
+            <p class="price">15 KSH</p>
+            <p class="duration"><i class="fas fa-clock"></i> 3 Hours</p>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> Extended browsing</li>
+              <li><i class="fas fa-check"></i> Light streaming</li>
+            </ul>
+          </div>
+          <button class="package-button" data-price="15">
+            <i class="fas fa-plug"></i> Connect
+          </button>
+        </div>
+      </div>
+
+      <!-- 6 Hours Plan -->
+      <div class="package">
+        <div class="package-content">
+          <div class="package-icon">
+            <i class="fas fa-business-time"></i>
+          </div>
+          <h2>6 Hours</h2>
+          <div class="package-details">
+            <p class="price">30 KSH</p>
+            <p class="duration"><i class="fas fa-clock"></i> 6 Hours</p>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> Most of the day access</li>
+              <li><i class="fas fa-check"></i> Ideal for work sessions</li>
+            </ul>
+          </div>
+          <button class="package-button" data-price="30">
+            <i class="fas fa-plug"></i> Connect
+          </button>
+        </div>
+      </div>
+
+      <!-- 12 Hours Plan -->
+      <div class="package">
+        <div class="package-content">
+          <div class="package-icon">
+            <i class="fas fa-sun"></i>
+          </div>
+          <h2>12 Hours</h2>
+          <div class="package-details">
+            <p class="price">50 KSH</p>
+            <p class="duration"><i class="fas fa-clock"></i> 12 Hours</p>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> Daily work</li>
+              <li><i class="fas fa-check"></i> Extended browsing</li>
+            </ul>
+          </div>
+          <button class="package-button" data-price="50">
+            <i class="fas fa-plug"></i> Connect
+          </button>
+        </div>
+      </div>
+
+      <!-- 24 Hours Plan -->
+      <div class="package">
+        <div class="package-content">
+          <div class="package-badge">FULL DAY</div>
+          <div class="package-icon">
+            <i class="fas fa-calendar-day"></i>
+          </div>
+          <h2>24 Hours</h2>
+          <div class="package-details">
+            <p class="price">100 KSH</p>
+            <p class="duration"><i class="fas fa-clock"></i> 24 Hours</p>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> Full day access</li>
+              <li><i class="fas fa-check"></i> Unlimited internet</li>
+            </ul>
+          </div>
+          <button class="package-button" data-price="100">
+            <i class="fas fa-plug"></i> Connect
+          </button>
+        </div>
+      </div>
+
+      <!-- 48 Hours Plan -->
+      <div class="package">
+        <div class="package-content">
+          <div class="package-icon">
+            <i class="fas fa-calendar-week"></i>
+          </div>
+          <h2>48 Hours</h2>
+          <div class="package-details">
+            <p class="price">150 KSH</p>
+            <p class="duration"><i class="fas fa-clock"></i> 48 Hours</p>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> 2 days access</li>
+              <li><i class="fas fa-check"></i> Heavy usage</li>
+            </ul>
+          </div>
+          <button class="package-button" data-price="150">
+            <i class="fas fa-plug"></i> Connect
+          </button>
+        </div>
+      </div>
+
+      <!-- 7 Days Plan -->
+      <div class="package">
+        <div class="package-content">
+          <div class="package-badge">WEEKLY</div>
+          <div class="package-icon">
+            <i class="fas fa-calendar-week"></i>
+          </div>
+          <h2>7 Days</h2>
+          <div class="package-details">
+            <p class="price">300 KSH</p>
+            <p class="duration"><i class="fas fa-clock"></i> 7 Days</p>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> Weekly access</li>
+              <li><i class="fas fa-check"></i> Heavy browsing</li>
+              <li><i class="fas fa-check"></i> Work friendly</li>
+            </ul>
+          </div>
+          <button class="package-button" data-price="300">
+            <i class="fas fa-plug"></i> Connect
+          </button>
+        </div>
+      </div>
+
+      <!-- 30 Days Plan -->
+      <div class="package premium">
+        <div class="package-content">
+          <div class="package-badge">BEST VALUE</div>
+          <div class="package-icon">
+            <i class="fas fa-crown"></i>
+          </div>
+          <h2>30 Days</h2>
+          <div class="package-details">
+            <p class="price">1000 KSH</p>
+            <p class="duration"><i class="fas fa-clock"></i> 30 Days</p>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> Monthly access</li>
+              <li><i class="fas fa-check"></i> Reliable connection</li>
+              <li><i class="fas fa-check"></i> Priority support</li>
+              <li><i class="fas fa-check"></i> Best value for money</li>
+            </ul>
+          </div>
+          <button class="package-button" data-price="1000">
+            <i class="fas fa-crown"></i> Get Premium
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="payment-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <div class="modal-header">
+        <h2>M-Pesa Payment</h2>
+      </div>
+      <div class="modal-body">
+        <form id="payment-form">
+          <div class="form-group">
+            <label for="mpesa-number">M-Pesa Number</label>
+            <div class="input-group">
+              <input type="tel" id="mpesa-number" name="mpesa-number" placeholder="Enter your M-Pesa number" required>
+            </div>
+          </div>
+          <div class="payment-details">
+            <p>Amount: <span id="payment-amount">0</span> KSH</p>
+            <p>Duration: <span id="payment-duration">0</span></p>
+          </div>
+          <div id="payment-message" class="payment-message"></div>
+          <button type="submit" id="pay-button" class="pay-button">
+            <span class="button-text">Pay with M-Pesa</span>
+            <div class="loading-spinner"></div>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>We provide high-speed internet access with flexible plans to suit your needs.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Email: support@smartwifi.com</p>
+        <p>Phone: +254 700 000000</p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Smart WiFi Hub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

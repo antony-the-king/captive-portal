@@ -1,0 +1,20 @@
+{
+	"name": "wifi-captive-portal",
+	"version": "1.0.0",
+	"description": "WiFi Captive Portal with M-Pesa Integration",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js",
+		"dev": "nodemon server.js"
+	},
+	"dependencies": {
+		"express": "^4.17.1",
+		"body-parser": "^1.19.0",
+		"cors": "^2.8.5",
+		"dotenv": "^10.0.0",
+		"axios": "^0.24.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.15"
+	}
+}
